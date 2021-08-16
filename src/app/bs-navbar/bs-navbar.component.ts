@@ -1,5 +1,6 @@
 import { AuthService } from './../auth.service';
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
+
 
 @Component({
   selector: 'bs-navbar',
@@ -7,8 +8,8 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./bs-navbar.component.css']
 })
 export class BsNavbarComponent {
-
-  constructor(public auth: AuthService) { }
+  constructor(public auth: AuthService) {
+  }
 
   logout() {
     this.auth.logout()
